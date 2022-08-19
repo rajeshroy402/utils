@@ -14,6 +14,7 @@ if (video.isOpened() == False):
 # so, convert them from float to integer.
 frame_width = int(video.get(3))
 frame_height = int(video.get(4))
+print("height = {} and width = {}".format(frame_height, frame_width)
    
 size = (frame_width, frame_height)
    
