@@ -32,6 +32,7 @@ while(True):
         # Write the frame into the
         # file 'filename.avi'
         result.write(frame)
+        print(ret)
   
         # Display the frame
         # saved in the file
