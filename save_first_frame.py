@@ -21,32 +21,29 @@ size = (frame_width, frame_height)
 # Below VideoWriter object will create
 # a frame of above defined The output 
 # is stored in 'filename.avi' file.
-result = cv2.VideoWriter('filename.avi', 
+result = cv2.VideoWriter('filename.jpg', 
                          cv2.VideoWriter_fourcc(*'MJPG'),
                          10, size)
     
-while(True):
-    ret, frame = video.read()
+ret, frame = video.read()
   
-    if ret == True: 
+if ret == True: 
   
         # Write the frame into the
         # file 'filename.avi'
-        result.write(frame)
-        print(ret)
+  result.write(frame)
+  print(ret)
   
         # Display the frame
         # saved in the file
         #cv2.imshow('Frame', frame)
   
         # Press S on keyboard 
-        # to stop the process
-        if cv2.waitKey(1) & 0xFF == ord('s'):
-            break
+        # to stop the proces
   
     # Break the loop
-    else:
-        break
+else:
+  break
   
 # When everything done, release 
 # the video capture and video 
