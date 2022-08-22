@@ -42,8 +42,6 @@ if ret == True:
         # to stop the proces
   
     # Break the loop
-else:
-  break
   
 # When everything done, release 
 # the video capture and video 
